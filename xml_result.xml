@@ -1,0 +1,1332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<documents>
+    <document id="0">
+        <url>https://discuss.erpnext.com/t/stock-balance-report-not-showing-any-data/60186</url>
+        <title>Stock balance report not showing any data</title>
+        <text>I just installed erpnext on digital ocean. Stock balance report is not showing any data. However stock
+            ledger is showing the correct data
+
+            I got following issue in error log
+
+            Traceback (most recent call last):
+            File "/home/erpuser/frappe-bench/apps/frappe/frappe/desk/query_report.py", line 251, in
+            get_prepared_report_result
+            data = json.loads(uncompressed_content)
+            File "/usr/lib/python3.5/json/__init__.py", line 312, in loads
+            s.__class__.__name__))
+            TypeError: the JSON object must be str, not 'bytes'
+
+            ![image|690x367](upload://mVOAC2T45LeyxslWuHb11E9c4f.png)
+        </text>
+        <keywords>Stock/Inventory</keywords>
+    </document>
+    <document id="1">
+        <url>https://discuss.erpnext.com/t/how-to-become-a-professional-erpnext-expert/60189</url>
+        <title>How to become a professional ERPNext expert</title>
+        <text>I am completely new to ERPNext. I would love to make it my career as ERPNext expert who can installm,
+            manage, and support different would be companies to whom I would like to give consultancy and complete
+            management and support of ERPNext. Please advise me on following points:
+            1. Which programming language, python, MySQL or frameworks I have to learn like python and frameworks\ how
+            deep do i have to learn the necessary programming languages etc.
+            2. How long should I expect to take before I can start consultancy
+        </text>
+        <keywords>Uncategorized</keywords>
+    </document>
+    <document id="2">
+        <url>https://discuss.erpnext.com/t/quality-inspection-reading/60190</url>
+        <title>Quality Inspection REading</title>
+        <text>I am trying to set up the Readings table to that when a new Quality Inspection is created the status
+            defaults to In Process. I used the customize form to set my options to
+
+            In Process
+            Accepted
+            Rejected
+
+            And set the Default to In Process but it always comes up as Accepted when a new doc is created.
+
+            Any tips? I tried using a custom script to flip the option to In Process but it doesn't work either
+
+            ![readings%20options|690x349](upload://hYAs6dbYq4soC1NUT5PE2XjQGTg.png)
+            ![default%20in%20process|690x269](upload://gJDy5091ApFpzGfNnSD8gU5sAJi.png)
+        </text>
+        <keywords>Customize ERPNext</keywords>
+    </document>
+    <document id="3">
+        <url>
+            https://discuss.erpnext.com/t/fatal-error-ineffective-mark-compacts-near-heap-limit-allocation-failed-javascript-heap-out-of-memory/60159
+        </url>
+        <title>FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of
+            memory
+        </title>
+        <text>Hi Guys!
+
+            Trying to update from Version 11 to Version 12.
+
+            Did a bench switch-to-branch version-12 and everything was running smoothly until the process quit due to an
+            Error: FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of
+            memory.
+
+            I've been researching on possible options to solve this, I already have the latest version of Nodejs and
+            Yarn 1.5.1.
+
+            Any idea of how I would be able to solve this. I've read a couple of blogs where they say that the ```
+            --max-old-space-size=4096 should be put before calling the node process, but I don't see how I can get that
+            to work when the files are being requested from frappe.io.
+
+            Also, I believe this maybe more Yarn related, but I do not have the sufficient knowledge with either
+            software to be able to get to a proper solution.
+
+            Any help is greatly appreciated!
+
+            Thanks!
+
+            &gt; Backing up sites...
+            &gt;
+            &gt; INFO:bench.app:pulling frappe
+            &gt;
+            &gt; $ git fetch --all
+            &gt;
+            &gt; Fetching upstream
+            &gt;
+            &gt; Fetching origin
+            &gt;
+            &gt; Username for 'https://github.com': sonyvec
+            &gt;
+            &gt; Password for 'https://sonyvec@github.com':
+            &gt;
+            &gt; $ git reset --hard upstream/version-12
+            &gt;
+            &gt; HEAD is now at 0f0d3eb Merge branch 'v12-pre-release' into version-12
+            &gt;
+            &gt; $ find . -name "*.pyc" -delete
+            &gt;
+            &gt; INFO:bench.app:pulling erpnext
+            &gt;
+            &gt; $ git fetch --all
+            &gt;
+            &gt; Fetching upstream
+            &gt;
+            &gt; Fetching origin
+            &gt;
+            &gt; Username for 'https://github.com': sonyvec
+            &gt;
+            &gt; Password for 'https://sonyvec@github.com':
+            &gt;
+            &gt; $ git reset --hard upstream/version-12
+            &gt;
+            &gt; HEAD is now at 84a5e34 Merge branch 'v12-pre-release' into version-12
+            &gt;
+            &gt; $ find . -name "*.pyc" -delete
+            &gt;
+            &gt; Updating Python libraries...
+            &gt;
+            &gt; $ /home/frappe/frappe-bench/env/bin/pip install -q -U pip
+            &gt;
+            &gt; INFO:bench.app:installing frappe
+            &gt;
+            &gt; $ /home/frappe/frappe-bench/env/bin/pip install -q -U -e /home/frappe/frappe-bench/apps/frappe
+            &gt;
+            &gt; $ sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-schedule: stopped
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-default-worker-0: stopped
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-long-worker-0: stopped
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-short-worker-0: stopped
+            &gt;
+            &gt; frappe-bench-web:frappe-bench-node-socketio: stopped
+            &gt;
+            &gt; frappe-bench-web:frappe-bench-frappe-web: stopped
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-schedule: started
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-default-worker-0: started
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-long-worker-0: started
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-short-worker-0: started
+            &gt;
+            &gt; frappe-bench-web:frappe-bench-frappe-web: started
+            &gt;
+            &gt; frappe-bench-web:frappe-bench-node-socketio: started
+            &gt;
+            &gt; INFO:bench.app:installing erpnext
+            &gt;
+            &gt; $ /home/frappe/frappe-bench/env/bin/pip install -q -U -e /home/frappe/frappe-bench/apps/erpnext
+            &gt;
+            &gt; $ sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-schedule: stopped
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-default-worker-0: stopped
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-long-worker-0: stopped
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-short-worker-0: stopped
+            &gt;
+            &gt; frappe-bench-web:frappe-bench-frappe-web: stopped
+            &gt;
+            &gt; frappe-bench-web:frappe-bench-node-socketio: stopped
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-schedule: started
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-default-worker-0: started
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-long-worker-0: started
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-short-worker-0: started
+            &gt;
+            &gt; frappe-bench-web:frappe-bench-frappe-web: started
+            &gt;
+            &gt; frappe-bench-web:frappe-bench-node-socketio: started
+            &gt;
+            &gt; Updating node packages...
+            &gt;
+            &gt; $ yarn install
+            &gt;
+            &gt; **yarn install v1.5.1**
+            &gt;
+            &gt; [1/4] Resolving packages...
+            &gt;
+            &gt; success Already up-to-date.
+            &gt;
+            &gt; Done in 0.27s.
+            &gt;
+            &gt; $ yarn install
+            &gt;
+            &gt; **yarn install v1.5.1**
+            &gt;
+            &gt; [1/4] Resolving packages...
+            &gt;
+            &gt; success Already up-to-date.
+            &gt;
+            &gt; Done in 2.32s.
+            &gt;
+            &gt; Patching sites...
+            &gt;
+            &gt; Migrating site1.local
+            &gt;
+            &gt; Updating DocTypes for frappe : [========================================]
+            &gt;
+            &gt; Updating DocTypes for erpnext : [========================================]
+            &gt;
+            &gt; Updating customizations for Address
+            &gt;
+            &gt; Generating Website Theme Files...
+            &gt;
+            &gt; Compiling Python Files...
+            &gt;
+            &gt; $ bench build
+            &gt;
+            &gt; **yarn run v1.5.1**
+            &gt;
+            &gt; $ FRAPPE_ENV=production node rollup/build.js
+            &gt;
+            &gt; Production mode
+            &gt;
+            &gt; ✔ Built js/moment-bundle.min.js
+            &gt;
+            &gt; ✔ Built js/libs.min.js
+            &gt;
+            &gt; Building frappe assets...
+            &gt;
+            &gt; ✔ Built js/checkout.min.js
+            &gt;
+            &gt; ✔ Built js/dialog.min.js
+            &gt;
+            &gt; ✔ Built js/modules.min.js
+            &gt;
+            &gt; ✔ Built js/social.min.js
+            &gt;
+            &gt; ✔ Built js/web_form.min.js
+            &gt;
+            &gt; ✔ Built js/list.min.js
+            &gt;
+            &gt; ✔ Built css/printview.css
+            &gt;
+            &gt; ✔ Built css/frappe-rtl.css
+            &gt;
+            &gt; ✔ Built js/chat.js
+            &gt;
+            &gt; &lt;--- Last few GCs ---&gt;
+            &gt;
+            &gt; [11493:0x36f93f0] 89318 ms: Mark-sweep 493.5 (497.4) -&gt; 493.2 (497.9) MB, 1514.4 / 0.0 ms (average
+            mu = 0.106, current mu = 0.023) allocation failure scavenge might not succeed
+            &gt;
+            &gt; [11493:0x36f93f0] 90950 ms: Mark-sweep 493.8 (497.9) -&gt; 493.6 (498.2) MB, 1592.6 / 0.0 ms (average
+            mu = 0.065, current mu = 0.024) allocation failure scavenge might not succeed
+            &gt;
+            &gt; &lt;--- JS stacktrace ---&gt;
+            &gt;
+            &gt; ==== JS stack trace =========================================
+            &gt;
+            &gt; 0: ExitFrame [pc: 0x13a71b9]
+            &gt;
+            &gt; Security context: 0x23919de808d1 &lt;JSObject&gt;
+            &gt;
+            &gt; 1: /* anonymous */ [0xf6c42dc5b39]
+            [/home/frappe/frappe-bench/apps/frappe/node_modules/rollup/dist/rollup.js:~14983]
+            [pc=0x158554394279](this=0x333f3a8443d1 &lt;Link map = 0x3c47f9dfb679&gt;,3908,47,0x063dd91804b1 &lt;undefined&gt;)
+            &gt;
+            &gt; 2: /* anonymous */ [0xf6c42dc5b39]
+            [/home/frappe/frappe-bench/apps/frappe/node_modules/rollup/dist/rollup.js:~14983] [pc=0x158554393c5e]...
+            &gt;
+            &gt; FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of
+            memory
+            &gt;
+            &gt; Writing Node.js report to file: report.20200408.155057.11493.0.001.json
+            &gt;
+            &gt; Node.js report completed
+            &gt;
+            &gt; 1: 0x9ef190 node::Abort() [node]
+            &gt;
+            &gt; 2: 0x9f13b2 node::OnFatalError(char const*, char const*) [node]
+            &gt;
+            &gt; 3: 0xb5da9e v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]
+            &gt;
+            &gt; 4: 0xb5de19 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]
+            &gt;
+            &gt; 5: 0xd0a765 [node]
+            &gt;
+            &gt; 6: 0xd0adf6 v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [node]
+            &gt;
+            &gt; 7: 0xd1760a v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector,
+            v8::GCCallbackFlags) [node]
+            &gt;
+            &gt; 8: 0xd18515 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace,
+            v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]
+            &gt;
+            &gt; 9: 0xd1afcc v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType,
+            v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [node]
+            &gt;
+            &gt; 10: 0xce19bb v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType,
+            v8::internal::AllocationOrigin) [node]
+            &gt;
+            &gt; 11: 0x10246ce v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*,
+            v8::internal::Isolate*) [node]
+            &gt;
+            &gt; 12: 0x13a71b9 [node]
+            &gt;
+            &gt; Aborted (core dumped)
+            &gt;
+            &gt; error An unexpected error occurred: "Command failed.
+            &gt;
+            &gt; Exit code: 134
+            &gt;
+            &gt; Command: sh
+            &gt;
+            &gt; Arguments: -c FRAPPE_ENV=production node rollup/build.js
+            &gt;
+            &gt; Directory: /home/frappe/frappe-bench/apps/frappe
+            &gt;
+            &gt; Output:
+            &gt;
+            &gt; ".
+            &gt;
+            &gt; info If you think this is a bug, please open a bug report with the information provided in
+            "/home/frappe/frappe-bench/apps/frappe/yarn-error.log".
+            &gt;
+            &gt; info Visit **https://yarnpkg.com/en/docs/cli/run** for documentation about this command.
+            &gt;
+            &gt; $ sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-schedule: stopped
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-default-worker-0: stopped
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-long-worker-0: stopped
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-short-worker-0: stopped
+            &gt;
+            &gt; frappe-bench-web:frappe-bench-node-socketio: stopped
+            &gt;
+            &gt; frappe-bench-web:frappe-bench-frappe-web: stopped
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-schedule: started
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-default-worker-0: started
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-long-worker-0: started
+            &gt;
+            &gt; frappe-bench-workers:frappe-bench-frappe-short-worker-0: started
+            &gt;
+            &gt; frappe-bench-web:frappe-bench-frappe-web: started
+            &gt;
+            &gt; frappe-bench-web:frappe-bench-node-socketio: started
+            &gt;
+            &gt; ________________________________________________________________________________
+            &gt;
+            &gt; Bench: Deployment tool for Frappe and Frappe Applications (https://frappe.io/bench).
+            &gt;
+            &gt; Open source depends on your contributions, so please contribute bug reports, patches, fixes or cash and
+            be a part of the community
+        </text>
+        <keywords>Install / Update</keywords>
+    </document>
+    <document id="4">
+        <url>https://discuss.erpnext.com/t/web-form-email-field-validation/44938</url>
+        <title>Web Form Email Field Validation</title>
+        <text>I created the doctype and the web form with an email field which is Data type and in the option field i
+            typed in it "Email" in order to use the default email validation but it is not working whatever the entered
+            data is it get through and gets saved how can i solve this? thanks a lot in advance
+        </text>
+        <keywords>Website</keywords>
+    </document>
+    <document id="5">
+        <url>https://discuss.erpnext.com/t/how-to-set-auto-re-order-level-for-multiple-warehouses/60184</url>
+        <title>How to set Auto Re-Order Level for multiple warehouses?</title>
+        <text>I can't really get the grasp of Auto Re-Order Level. Can somebody explain how you would set the following
+            scenario:
+
+            Let's say the company has 2 shops (shop-1 and shop-2) and a central warehouse.
+            * Shop-1 should re-order item X when it has only 1 left. Then it should get 2x item X from central.
+            * Shop-2 is bigger, so it should re-order item X when it has 5 left. Then it should get 5x item X from
+            central.
+            * Central should re-order item X when it has only 7 left. Then it should purchase 10x item X.
+
+            Would the following be correct?
+
+            **Check in (group) | Request for | Re-order Level | Re-order Qty | Material Request Type**
+            All Warehouses | central | 7 | 10 | Purchase
+            All Warehouses | shop-1 | 1 | 2 | Transfer
+            All Warehouses | shop-2 | 5 | 5 | Transfer
+        </text>
+        <keywords>Stock/Inventory</keywords>
+    </document>
+    <document id="6">
+        <url>https://discuss.erpnext.com/t/product-item-configurator/42939</url>
+        <title>Product/Item configurator</title>
+        <text>Hello everyone,
+
+            first of all, I want to thank the frappe/erpNext-Team. We are still inexperienced with expNext and at the
+            moment our IT-guy and I testing the system in our spare time and we are really impressed.
+            I would like to change our existing system for the order management, quotation and invoicing with this
+            system.
+
+            **_- Short background story, why we need an item-Configurator_**
+            (you don´t have to read this, the main question is below)
+
+            Nearly all functions we need are already integrated, but the most important “option” that we need is a
+            “item-Configurator”.
+            We are selling electronic parts which have to be customized for each application with some hardware and
+            software options. Behind the most options there are different prices, so the configurator has to calculate
+            the correct price for it.
+
+            The “variant” option is nearly that, what we would need. But it´s not able, to create the needed item in a
+            quotation or sales-order and calculate automatically the price for this. The idea to create every possible
+            item is not useful, because the different models (we are selling approximately 70 different models that can
+            be configured with 5-37 “attributes” where you can choose up to 30 different options. That would be some
+            billion items/variants…)
+
+            While I was searching for a solution I found the “radplusplus” configurator from @Rene_Mailloux what is
+            really close to that, what I´m searching.
+            Unfortunately we were not able to install this app correct into our test-System. We have the option in the
+            Stock-Part to activate the configurator, but it´s not able to see this option in the editing-row at
+            sales-order. Also the possibility to tag a price for each option is not given, so it´s not what we are
+            looking for…
+
+            **_The interesting part:_**
+
+            Unfortunately, I´m not so good with the system and don´t know if I understand it correctly, so I would be
+            very grateful if someone with more experience could read my idea and give me a feedback, if I could put it
+            this way, or if it is a total nonsense.
+
+            **- How the configurator should work: (nearly like “variant” in the standard system)**
+            o Add new items (Product-Model) in the stock an mark them as “configurable”
+             If this is marked, you have a table where you can add the attributes with all options and the individual
+            prices for this option
+             The item-price will be calculated by the base price of the model and the selected options
+            o You can choose the Config-Item for quotations, salesorder… and edit the config by open the “editing raw
+            tab” (like it should work in “radplusplus”)
+            It will calculate the actual price and save the configuration for this costumer
+             The “costumer-config-save” must be able to read back, because it often happens that in an offer only minor
+            things have to be changed, or in a follow-up order only one value has to be changed. so it is extremely
+            useful if you do not have to recreate the complete code, instead you can choose a config that has already
+            been ordered by the customer
+
+            **- My idea to create an item-Configurator (don´t know if it´s a good idea)**
+            o Create DocType called something like: “item config”, “item config save”, “item config attribute”
+            o Add the option “Configurable” in the “item”, “Sales Order Item”… form. If it´s not selected, the
+            configurator will be hidden, like the variants
+            - if “Configurator” is “1”, you will not able to set a price for this item. This must be calculated by the
+            “Configurator”
+
+            Could this be possible do create the Configurator only with standard “customization” (doctype, form…) or
+            must be created an app for this?
+
+
+            Best thanks in advance for your time and best regards from Vienna (Austria),
+            Matthias
+        </text>
+        <keywords>Customization</keywords>
+    </document>
+    <document id="7">
+        <url>https://discuss.erpnext.com/t/sales-return-credit-note-why-so-complicated/60104</url>
+        <title>Sales Return / Credit note. Why so complicated!?</title>
+        <text>Hi,
+            I'm trying to understand better the refund process in Erpnext because everytime it's a pain.
+
+            Let says, I have a Sales order for an in stock item. Item is delivered with delivery note. Sales invoice is
+            created and paid.
+
+            Now the customer want to return 1 item and but something new.
+
+            1. I need to go in the sales invoice and make a Return / Credit note. Then it create a negative balance on
+            the customer account.
+            2. I need to go to the delivery note to create a Sales return (to restock the item because it's not possible
+            to do it in the Credit note directly).
+            3. I need to close the sales order because it's now open and incomplete because I now I one item not
+            delivered.
+            4. I create a new invoice for the customer BUT I can't apply the negative balance on his account the the
+            invoice. Payment reconcillaiton tool doesnt work either for that.
+            5. Go to journal voucher to make a entry to apply the payment to the invoice so the outstanding amout is
+            right.
+            6. Enter customer payment to close this invoice.
+
+            Am I missing something or this is really complicated? How can I learn this to an employee and make sure he
+            dont forget anything and dont forget to put the item back in stock so the inventory balance...
+        </text>
+        <keywords>Uncategorized</keywords>
+    </document>
+    <document id="8">
+        <url>
+            https://discuss.erpnext.com/t/unable-to-display-subscription-plans-as-products-in-the-homepage-of-website/60182
+        </url>
+        <title>Unable to display subscription plans as products in the homepage of Website</title>
+        <text>I am trying a setup a website using ERPNext. I am able to add items as products in the homepage. But I
+            don't want them to be added as products. I have a list of subscription plans and I want them to be added as
+            products in the homepage. You can find those plans in the screenshot given below. Please suggest me some way
+            to add these plans as products in the
+            homepage.![Screenshot%20(145)|690x387](upload://8Sdz141WaaTyVZ9Whz6sPz26b5l.png)
+        </text>
+        <keywords>Healthcare</keywords>
+    </document>
+    <document id="9">
+        <url>https://discuss.erpnext.com/t/new-dashboard-chart-type-lists/54571</url>
+        <title>New dashboard chart type - Lists</title>
+        <text>Hello everyone,
+            Studying how the dashboards can help our companies learn more of what is happening around, we've found that
+            one thing could be useful and that's to have a dashboard chart type in the form of lists.
+
+            Here's a real scenario:
+
+            We would customize the Lead statuses and make a dashboard chart that would display in a list all leads
+            currently under a specific status.
+
+            Now, I know that the Report Builder can do this very well, however, I am thinking of having these types of
+            lists on a dashboard with other charts.
+
+            Other secondary scenarios that could benefit our business at least:
+
+            1. Upcoming events in the dashboard - as a List
+            2. Best performing of a specific doctype - as a List - this could benefit the hospitality industry of which
+            we are part as well
+
+            Food for thoughts and comments :slight_smile:
+        </text>
+        <keywords>Uncategorized</keywords>
+    </document>
+    <document id="10">
+        <url>https://discuss.erpnext.com/t/stop-changing-posting-date-in-every-change-sales-invoice/60107</url>
+        <title>Stop changing posting date in every change (sales invoice)</title>
+        <text>I have many employee working in invoice and posting date &amp; Posting time change on very save
+            and may be submit after several days by manager
+            i wont to fix posting date with the date of first created on
+            ![posting%20dagte|690x293](upload://sGdX1hnpYE1N4oXiUBQ9Y2ni2ml.png)
+        </text>
+        <keywords>Accounting</keywords>
+    </document>
+    <document id="11">
+        <url>https://discuss.erpnext.com/t/learning-erpnext-frappe-technology-to-develop-and-customize-resources/60181
+        </url>
+        <title>Learning ERPNext / Frappe Technology to Develop and Customize [Resources]</title>
+        <text>During this downtime, I am hoping to try and customize ERPNext so we can start using it within our
+            organization.
+
+            I was hoping to ask the community if they had any experience with any online courses that taught a similar
+            JavaScript/Python development environment.
+
+            I am not a complete novice to database with experience in Visual Basic / C++ programming and am familiar
+            with javascript in web development html/css. Although I am new to web based database development. So the
+            server side / client side is a bit different for me. Hoping to learn more about this development
+            environment.
+
+            Of course there is good videos to be found here:
+            https://www.youtube.com/channel/UCn3bV5kx77HsVwtnlCeEi_A/videos
+            the series starting here:
+            https://www.youtube.com/watch?v=eCAMPcl7NKc&amp;t=28s
+            Was very helpful, but unfortunately a lot of the way things work have changed with later versions of
+            frappe/erpnext.
+
+            The tutorial here:
+            https://frappe.io/docs/user/en/tutorial
+            Was very helpful as well.
+
+            The user manual is great for familiarizing yourself with ERPNext.
+            https://docs.erpnext.com/docs/user/manual/en
+
+            I am watching a free course on python (willing to pay for resources as well) but that is strictly python and
+            bouncing back and forth between python and javascript is a bit confusing for me. One of the first things I
+            hope to do is call an API to upload some information from data within frappe/doctype. I am not sure if
+            that's done in python or javascript within this environment. I'd guess pythonm but I can't even get my
+            "hello world" program to work since I think the directory structure has changed in the latest version of
+            frappe/erpnext. My local install doesn't match the tutorial on frappe dev.
+
+
+            Read the FAQ about the partner program:
+            https://erpnext.com/partners/plans
+            It would be awesome if you could pay to be a partner and unlock some online development type training. Could
+            be some income for the software to create online dev resources that can be unlocked with a paid membership.
+
+            Hoping this thread can be a list for learning resources for people looking to customize this awesome
+            software! Thanks for any input! If anyone found anything helpful, please share!
+        </text>
+        <keywords>Customize ERPNext</keywords>
+    </document>
+    <document id="12">
+        <url>https://discuss.erpnext.com/t/erpnext-install-fails-for-ubuntu-16-due-to-ansible-missing/59533</url>
+        <title>ERPNext install fails for Ubuntu 16 due to ansible missing</title>
+        <text>Hello comunity. Work requires me to set up a new server with ERPNext. Since the upgrade to V12 however,
+            the installation script has changed a little. I followed [these
+            instructions.](https://github.com/frappe/bench/blob/master/docs/easy_install.md)
+
+            Now I'm getting following error:
+            ![ubuntu|690x208](upload://eJ71elYhRXjE16y31XaVfTBb7Eq.png)
+
+            So apparently it stops when trying to install ansible. I then manually installed ansible using apt-get, but
+            that didn't help, same error.
+
+            Any tipps? Should I try to install ansible using pip?
+            Regards
+        </text>
+        <keywords>Setup</keywords>
+    </document>
+    <document id="13">
+        <url>https://discuss.erpnext.com/t/wkhtmltopdf-bug/60152</url>
+        <title>Wkhtmltopdf bug</title>
+        <text>hi Guys i just re Installed "wkhtmltopdf" , then i get this error
+            while i try to print a document from the desk i get this error
+
+            Traceback (most recent call last):
+            File "/home/azahra-erp/frappe-bench/apps/frappe/frappe/utils/pdf.py", line 25, in get_pdf
+            filedata = pdfkit.from_string(html, False, options=options or {})
+            File "/home/azahra-erp/frappe-bench/env/src/pdfkit/pdfkit/api.py", line 68, in from_string
+            return r.to_pdf(output_path)
+            File "/home/azahra-erp/frappe-bench/env/src/pdfkit/pdfkit/pdfkit.py", line 143, in to_pdf
+            raise IOError("wkhtmltopdf exited with non-zero code {0}. error:\n{1}".format(exit_code,
+            stderr.decode("utf-8")))
+            OSError: wkhtmltopdf exited with non-zero code -6. error:
+            The switch --footer-html, is not support using unpatched qt, and will be ignored.The switch --header-html,
+            is not support using unpatched qt, and will be ignored.The switch --print-media-type, is not support using
+            unpatched qt, and will be ignored.QXcbConnection: Could not connect to display
+
+
+            During handling of the above exception, another exception occurred:
+
+            Traceback (most recent call last):
+            File "/home/azahra-erp/frappe-bench/apps/frappe/frappe/app.py", line 60, in application
+            response = frappe.api.handle()
+            File "/home/azahra-erp/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+            return frappe.handler.handle()
+            File "/home/azahra-erp/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+            data = execute_cmd(cmd)
+            File "/home/azahra-erp/frappe-bench/apps/frappe/frappe/handler.py", line 56, in execute_cmd
+            return frappe.call(method, **frappe.form_dict)
+            File "/home/azahra-erp/frappe-bench/apps/frappe/frappe/__init__.py", line 1036, in call
+            return fn(*args, **newargs)
+            File "/home/azahra-erp/frappe-bench/apps/frappe/frappe/utils/print_format.py", line 91, in download_pdf
+            frappe.local.response.filecontent = get_pdf(html)
+            File "/home/azahra-erp/frappe-bench/apps/frappe/frappe/utils/pdf.py", line 32, in get_pdf
+            if ("ContentNotFoundError" in e.message
+            AttributeError: 'OSError' object has no attribute 'message'
+        </text>
+        <keywords>Bug</keywords>
+    </document>
+    <document id="14">
+        <url>https://discuss.erpnext.com/t/clear-custom-buttons-in-sales-invoice/60178</url>
+        <title>Clear custom buttons in sales invoice</title>
+        <text>I am trying to remove the action buttons in the action bar in sales invoice doc form.
+            ![image|290x165](upload://yHjgxam93vEWEIFDtiyOSmEQuVD.png)
+
+            I added
+
+            onload: function (frm) {
+            frm.clear_custom_buttons();
+            },
+
+            to my custom sales_invoice.js It works when the sales invoice form is loaded. But as soon as the customer
+            field is filled the form refreshes and the action buttons reappear. Any ideas?
+        </text>
+        <keywords>Developers</keywords>
+    </document>
+    <document id="15">
+        <url>https://discuss.erpnext.com/t/get-transaction-wise-stock-balance/60083</url>
+        <title>Get Transaction wise Stock Balance</title>
+        <text>Hi Experts,
+            Is there any way I can extract the Stock Balance per transaction. e.g
+
+            Doc Type Doc Ref Item Doc Qty Remaining Bal Qty
+            Material Entry MATENT001 Laptop 100 23
+            Purchase Inv PURINV001 Keyboard 20 0
+            Purchase Inv PURINV002 Keyboard 10 7
+            Purchase Inv PURINV003 Laptop 25 25
+
+            Whereas Remaining Balance Qty is the column to identify the balance left after the stock is sold per
+            transaction.
+        </text>
+        <keywords>Stock/Inventory</keywords>
+    </document>
+    <document id="16">
+        <url>https://discuss.erpnext.com/t/multi-company-and-the-invoices-series/52380</url>
+        <title>Multi company and the invoices series</title>
+        <text>Hello;
+
+            As we know that each company will have separated Chart of Account.
+
+            But the problem that the naming serial for the invoices is not separated, and will cause to have
+            discontinuity for the numbers when there is audit, this is not allowed.
+
+            The only way to overcome this is to create new instance for each company but in this case, it will mot be
+            possible to see all companies from one login (session), and will not be able even to use duplicate feature.
+
+            So how to resolve this problem?
+            It is not acceptable to have SINV-00001 and then SINV-00020, the audit will ask where is 2 and 3 and 4 ...
+            etc, how did u reach for invoice SINV-00020 directly?!!!
+
+            There should be a solution for this, otherwise it is not possible to use multi company and multi financial
+            book.
+
+            Regards
+            Bilal
+        </text>
+        <keywords>Accounting</keywords>
+    </document>
+    <document id="17">
+        <url>https://discuss.erpnext.com/t/multiple-conditions-on-salary-structure-with-a-single-formula/57214</url>
+        <title>Multiple conditions on Salary Structure with a single formula</title>
+        <text>HI i wanted to know how to put multiple conditions with a single formula on ERPNEXT version 12.
+
+            Example:
+
+            Component 1: if base is greater than or equal to 5,000 but less than or equal to 10,000 then base * 0.01
+
+            Component 2 if base is greater or equal to than 10,001 but less than or equal to 15,0000 then base * 0.02
+
+
+            How can i express these condition on the salary structure? Kindly assist.
+        </text>
+        <keywords>HRMS</keywords>
+    </document>
+    <document id="18">
+        <url>https://discuss.erpnext.com/t/salary-component-formula/49406</url>
+        <title>Salary Component Formula</title>
+        <text>Hi everyone, I am not a programmer. I am still trying to figure out phyton coding.. How can I set the
+            formula in Salary Component like below:
+
+            When wages exceed RM800 but not exceed RM900, contribution amount is RM1.70
+            When wages exceed RM900 but not exceed RM1,000, contribution amount is RM1.90
+            When wages exceed RM1,000 but not exceed RM1,100, contribution amount is RM2.10
+            .
+            .
+            .
+            When wages exceed RM4,000, contribution amount is RM7.90
+
+
+            Above mentioned wages is the total of basic salary, overtime pay, allowance, incentive and bonuses.
+        </text>
+        <keywords>HRMS</keywords>
+    </document>
+    <document id="19">
+        <url>https://discuss.erpnext.com/t/bom-import-rate/20383</url>
+        <title>BOM import rate</title>
+        <text>I would like to import BOMs into the system. I downloaded the template by exporting the BOM. There is a
+            column in there called "rate". I'm a little confused by this MANDATORY COLUMN. If I was to create a new BOM
+            manually, when I select the item to be part of the BOM the rate is AUTO filled for me based on what I have
+            set for my "Rate Of Materials Based On". In my case "Valuation Rate." I would like the import to do the
+            same. I don't want to write the value for my item I would like the system to calculate it for me.
+
+            Is this possible? If not, is there a workaround? Can I enter 0 and go into the BOM manually to update the
+            value?
+
+            Thank you all. P.S. Yes I did look at the manual/docs.
+
+            Nathan
+        </text>
+        <keywords>Manufacturing</keywords>
+    </document>
+    <document id="20">
+        <url>https://discuss.erpnext.com/t/error-in-easy-installation/60110</url>
+        <title>Error in easy installation</title>
+        <text>I am trying to install on server but got that trace out
+
+            Traceback (most recent call last):
+            File "install.py.1", line 437, in &lt;module&gt;
+            install_bench(args)
+            File "install.py.1", line 241, in install_bench
+            run_playbook('site.yml', sudo=True, extra_vars=extra_vars)
+            File "install.py.1", line 362, in run_playbook
+            success = subprocess.check_call(args, cwd=os.path.join(cwd, 'playbooks'), stdout=log_stream,
+            stderr=sys.stderr)
+            File "/usr/lib/python3.6/subprocess.py", line 311, in check_call
+            raise CalledProcessError(retcode, cmd)
+            subprocess.CalledProcessError: Command '['ansible-playbook', '-c', 'local', 'site.yml', '-vvvv', '-e',
+            '@/tmp/extra_vars.json', '--become', '--become-user=erpadmin']' returned non-zero exit status 2.
+
+            Blockquote
+
+
+            what's going wrong????
+        </text>
+        <keywords>Setup</keywords>
+    </document>
+    <document id="21">
+        <url>https://discuss.erpnext.com/t/salary-formulate-for-working-hour-based-salary/60141</url>
+        <title>Salary Formulate for Working Hour Based Salary</title>
+        <text>Hi everyone,
+
+            So currently i have 2 type of shift (normal &amp; overtime), and i want to pay my employee based on their
+            total working hour per week/per month.
+
+            At current system I set 2 shift type, normal (8-17) and overtime (17-24) and i thought i would use the late
+            entry and late exit to adjust their working hour (if overtime end past 24 or before 24 or something like
+            that). But i find i can't input the number for late entry/early exit to adjust that working hour.
+
+            Other problem is i find the working hour on Attendance report is 0 even though i already set the shift type
+            to the employee.
+
+            From my problem above, i thought i don’t have Base Salary for my employee? Since their salary is paid based
+            on Total working hour. Am i right?
+
+            Hope someone can give insight to my problem.
+
+            Thanks &amp; regards,
+            Randy
+        </text>
+        <keywords>Uncategorized</keywords>
+    </document>
+    <document id="22">
+        <url>https://discuss.erpnext.com/t/what-is-difference-btn-billing-and-costing-rate/45874</url>
+        <title>What is difference btn Billing and costing rate</title>
+        <text>Hello members,
+            Can someone assist the difference between billing rate and costing rate in time sheet. We are planning to
+            start paying staff from time sheet, but found two words confusing between billing and costing rates,
+        </text>
+        <keywords>User Forum</keywords>
+    </document>
+    <document id="23">
+        <url>https://discuss.erpnext.com/t/expense-claim-multi-currency-settlement/58820</url>
+        <title>EXpense Claim multi currency settlement</title>
+        <text>Hello
+
+            we are using ERPNext expense claim module for our employees claim settlement procedure. we are facing one
+            issue in the same . We have configured our home currency as INR . However while doing the expense claim
+            entry and type selected as USD for our the claim is actually in foreign currency ,still the entry is going
+            as INR .
+
+            Request you to guide me in the same.
+
+            thanks
+            jacob
+        </text>
+        <keywords>ERPNext</keywords>
+    </document>
+    <document id="24">
+        <url>https://discuss.erpnext.com/t/how-to-print-barcode-labels/33111</url>
+        <title>How to Print Barcode Labels</title>
+        <text>I need help on how to print barcode labels.
+
+            I have designed a print format that contains just the product name and barcode
+
+            The barcode is contained in an html script that converts the barcode number to barcode symbols.
+
+            Works well and prints out the barcode as wanted.
+
+            Unfortunately the only barcode font that works for me is "Libre Barcode", this font is not scanable by all
+            barcode scanners.
+
+            So though it prints, it is not scanning, basically useless.
+
+            I would appreciate any idea on a way forward.
+
+            Regards
+        </text>
+        <keywords>Uncategorized</keywords>
+    </document>
+    <document id="25">
+        <url>
+            https://discuss.erpnext.com/t/unable-to-cancel-purchase-invoice-when-open-can-be-deleted-from-list-view/59614
+        </url>
+        <title>Unable to Cancel Purchase Invoice when open, can be deleted from list view</title>
+        <text>After Version update to 12.6.0
+
+            Purchase Invoice when open cannot be cancelled, system freezes for a while.
+
+            But when the same task is performed from List view it is cancelled
+        </text>
+        <keywords>Accounting</keywords>
+    </document>
+    <document id="26">
+        <url>
+            https://discuss.erpnext.com/t/scroll-down-bar-not-shown-and-scroll-not-working-in-reports-like-general-ledger/59613
+        </url>
+        <title>Scroll Down Bar Not shown and scroll not working in reports like general ledger</title>
+        <text>Scroll down bar not being shown and also scroll not working in reports like general ledger, Stock Balance
+            and misc after update to V12.6.0
+
+
+            ![2020-03-25%20(1)|690x388](upload://3GIhSQiAKH29nVs2TKjwkAR0mrj.png)
+        </text>
+        <keywords>Reports</keywords>
+    </document>
+    <document id="27">
+        <url>https://discuss.erpnext.com/t/how-to-account-for-returned-payment-to-a-supplier/52891</url>
+        <title>How to account for returned payment to a supplier?</title>
+        <text>Situation
+
+            I have a **Purchase Invoice** from which I have created a __Payment Entry__.
+            Now the supplier had change its bank account of, so the funds where returned from the overseas bank (because
+            the bank account the payment was sent to does not exist any longer).
+
+            How can I account for this correctly in ERPNext?
+
+            I need to 'reopen' invoice (which is marked as paid) and also return the funds back on to our outgoing bank
+            account (of course not all of it because both involved banks took a bite from the money).
+
+            I was looking at journal entry but can not link that neither to a payment entry, nor to a 'paid' Purchase
+            Invoice.
+
+            Can anybody kindly advise how to handle such a scenario?
+        </text>
+        <keywords>Accounting</keywords>
+    </document>
+    <document id="28">
+        <url>https://discuss.erpnext.com/t/email-campaign-for-leads/60175</url>
+        <title>Email Campaign for Leads</title>
+        <text>Hello All,
+            I was exploring the Email Campaign feature.
+            From what I understand, I have to manually create an Email Campaign for each Lead.
+            Is there a way to automate this on creation of a Lead?
+            Because if an organisation gets a lot of leads everyday, it would be tedious to create an Email Campaign
+            manually for all the leads.
+        </text>
+        <keywords>Selling/CRM</keywords>
+    </document>
+    <document id="29">
+        <url>https://discuss.erpnext.com/t/error-when-running-pip-install-user-e-bench-repo/60010</url>
+        <title>Error when running "pip install --user -e bench-repo"</title>
+        <text>I am getting this problem when I am following this page:
+            [https://frappe.io/docs/user/en/installation#macos](https://frappe.io/docs/user/en/installation#macos) to
+            install Frappe Bench on my macOS.
+
+            I get this outcome in my terminal when I run "pip install --user -e bench-repo" in the terminal:
+
+            Traceback (most recent call last):
+            File "/usr/local/bin/pip", line 6, in &lt;module&gt;
+            from pkg_resources import load_entry_point
+            File "/usr/local/lib/python2.7/site-packages/pkg_resources/__init__.py", line 26, in &lt;module&gt;
+            import zipfile
+            ImportError: No module named zipfile
+
+            **can anyone kindly help me?**
+        </text>
+        <keywords>ERPNext</keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+    <document id="1">
+        <url></url>
+        <title></title>
+        <text></text>
+        <keywords></keywords>
+    </document>
+</documents>

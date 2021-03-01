@@ -86,10 +86,6 @@ echo "[TODO] Describe how to execute Unit Tests"
 
 ## :bust_in_silhouette: Authors
 
-**Monogramm**
-
-* Website: https://www.monogramm.io
-* Github: [@Monogramm](https://github.com/Monogramm)
 
 ## :handshake: Contributing
 
