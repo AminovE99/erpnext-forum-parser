@@ -85,6 +85,8 @@ echo "[TODO] Describe how to execute Unit Tests"
 -->
 
 ## :bust_in_silhouette: Authors
+* Aminov Emil
+* Galimzyanov Gazinur
 
 
 ## :handshake: Contributing
@@ -97,8 +99,6 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 Give a :star: if this project helped you!
 
 ## :page_facing_up: License
-
-Copyright © 2019 [Monogramm](https://github.com/Monogramm).<br />
 This project is [AGPL v3](uri_license) licensed.
 
 ***
